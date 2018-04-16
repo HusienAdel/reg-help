@@ -1,0 +1,303 @@
+@font-face {
+   font-family: "Noto Naskh Arabic";
+   font-style: normal;
+   font-weight: 400;
+   src: url(../fonts/NotoNaskhArabic-Regular.eot);
+   src: url(../fonts/NotoNaskhArabic-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/NotoNaskhArabic-Regular.woff) format("woff"), url(../fonts/NotoNaskhArabic-Regular.ttf) format("truetype");
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   padding: 0 0 85px 0;
+   margin: 0;
+   font-family: "Noto Naskh Arabic", arial;
+   color: #fff;
+   background: #0080bb;
+   /* fallback for old browsers */
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-gradient(linear, left top, right top, from(#2795c7), to(#0080bb));
+   background: linear-gradient(to right, #2795c7, #0080bb);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   position: relative;
+}
+
+#header {
+   width: 100%;
+   height: 160px;
+   position: relative;
+}
+
+#header .container {
+   position: relative;
+}
+
+.logo1 {
+   display: block;
+   width: 156px;
+   height: 156px;
+   background: url("../img/kfu_logo.png") no-repeat;
+   position: absolute;
+   top: 25px;
+   right: 0;
+}
+
+.logo2 {
+   display: block;
+   width: 206px;
+   height: 137px;
+   background: url("../img/deanship_logo.png") no-repeat;
+   position: absolute;
+   top: 25px;
+   left: 0;
+}
+
+#infoBlock h3 {
+   padding: 0px 0 10px 0;
+   text-align: center;
+   position: relative;
+
+
+}
+
+#infoBlock h3 .svg-inline--fa {
+   margin-left: 5px;
+}
+
+#infoBlock h3::after {
+   content: "\f137";
+   font-family: 'fontAwesome';
+   position: absolute;
+   top: 50%;
+   left: 10%;
+   -webkit-transform: translate(0, -50%);
+           transform: translate(0, -50%)
+}
+
+#infoBlock h3:hover, #infoBlock h3:focus {
+   cursor: pointer;
+}
+
+#infoBlock h3::before {
+   content: "";
+   width: 100%;
+   height: 0px;
+   position: absolute;
+   right: 0;
+   top: 40px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   -webkit-box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+   padding-bottom: 10px;
+}
+
+#infoBlock ol {
+   margin: 0;
+   padding: 0;
+}
+
+#infoBlock section ol li {
+   font-size: 1rem;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   padding: 0;
+   margin: 0;
+   list-style-position: inside;
+   line-height: 2.4;
+}
+
+#infoBlock section ol li:last-child {
+   border: none;
+}
+
+.info {
+   width: 100%;
+   padding: 15px 15px;
+   margin: 35px auto 15px;
+   font-size: 1.1rem;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   text-align: center;
+   position: relative;
+}
+
+.info::after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 2px;
+   -webkit-box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3);
+   box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.3);
+   position: absolute;
+   top 0;
+   right: 0;
+   left: 0;
+   margin: 0 auto;
+   border-radius: 25px;
+}
+
+#infoBlock section {
+   padding: 25px 0;
+   overflow: hidden;
+}
+
+.info .icon {
+   font-size: 3rem;
+   display: block;
+   background-color: #fff;
+   width: 100px;
+   height: 100px;
+   border-radius: 100px;
+   line-height: 110px;
+   margin: 0 auto;
+   text-align: center;
+   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+   text-shadow: 0px 10px 3px #000;
+   color: #0080bb
+}
+
+.info h2 {
+   text-align: center;
+}
+
+.imgItem {
+   clear: both;
+   float: left;
+   border: 5px solid rgba(255, 255, 255, 0.3);
+   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   margin: 15px 15px 0 0;
+   vertical-align: middle;
+   width: 100%;
+   -webkit-transition: all .3s;
+   transition: all .3s;
+}
+
+.imgItem:hover {
+   border: 5px solid rgba(255, 255, 255, 0.7);
+   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.customTable {
+   display: none;
+   text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.customTable tbody tr td:first-child {
+   width: 75%;
+   padding: 20px 0;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   position: relative;
+   padding-right: 17px;
+   font-size: 1.04rem;
+}
+
+.customTable tbody tr td:first-child::before {
+   content: "";
+   display: block;
+   width: 7px;
+   height: 7px;
+   border-radius: 7px;
+   background-color: #fff;
+   position: absolute;
+   top: 50%;
+   right: 0;
+   vertical-align: middle;
+   -webkit-transform: translate(0, -50%);
+           transform: translate(0, -50%);
+   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.customTable tbody tr td:nth-child(2n) {
+   margin: 20px 0;
+   overflow: hidden;
+}
+
+.customTable tbody tr td:nth-child(2n) img {
+   margin-bottom: 20px;
+}
+
+#Agree {
+   text-align: center;
+   font-size: 1.2rem;
+   color: #fff;
+border-radius: 100px;
+   margin: 0 auto;
+   -webkit-transition: all .3s;
+   transition: all .3s;
+}
+
+#Agree:hover {
+background-color: rgba(0,0,0,0.1);
+
+}
+
+#Agree span {
+   width: 100%;
+   display: inline;
+   text-align: center;
+   text-align: center;
+   font-size: 1.2rem;
+   margin-right: 10px;
+}
+
+.open {
+   display: block;
+}
+
+#infoBlock h3:first-child::after {
+   content: none;
+}
+
+.topPage {
+   display: block;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   background-color: rgba(0, 0, 0, 0.4);
+   color: #fff;
+   font-size: 2rem;
+   border-radius: 50px;
+   position: absolute;
+   bottom: 0;
+   bottom:50px;
+   left: 40px;
+
+   margin: 0 auto;
+   line-height: 60px;
+}
+
+.topPage:hover {
+   color: #fff;
+   text-decoration: none;
+   background-color: orange;
+}
+
+.submitOk {
+display: block;
+   background-color: #03557a;
+   color: #fff;
+   border: none;
+   padding: 6px 35px;
+   border-radius: 50px;
+   width: 175px;
+   margin: 15px auto 0px;
+   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   -webkit-transition: all .3s;
+   transition: all .3s;
+}
+
+.submitOk:hover, .submitOk:focus {
+   background-color: orange;
+   text-decoration: none;
+   border: none;
+
+   outline: none;
+}
+
+.customTable tbody tr:last-child td:first-child {
+   border: none;
+}
